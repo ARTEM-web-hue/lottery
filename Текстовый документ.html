@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Кликер с аккаунтами</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div id="login-container" class="container">
+		<h1>Войдите в аккаунт</h1>
+		<form id="login-form">
+			<label for="username">Логин:</label>
+			<input type="text" id="username" placeholder="Введите логин" required>
+			<label for="password">Пароль:</label>
+			<input type="password" id="password" placeholder="Введите пароль" required>
+			<button type="submit">Войти</button>
+		</form>
+		<p>Нет аккаунта? <a href="#" id="register-link">Зарегистрируйтесь</a></p>
+	</div>
+
+	<div id="game-container" class="container" style="display: none;">
+		<h1>Кликер с таблицей лидеров</h1>
+		<p>Держите палец на кнопке, чтобы увеличивать счетчик!</p>
+		<button id="clickButton">Держи меня!</button>
+		<p>Ваш счет: <span id="counter">0</span></p>
+
+		<h2>Таблица лидеров (Топ 10)</h2>
+		<table id="leaderboard">
+			<thead>
+				<tr>
+					<th>Место</th>
+					<th>Логин</th>
+					<th>Счет</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Строки таблицы будут добавлены через JavaScript -->
+			</tbody>
+		</table>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
